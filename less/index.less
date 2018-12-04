@@ -1,0 +1,234 @@
+
+
+@import './adapter.less';
+@import './base.less';
+@import './style.less';
+
+body {
+    background-color: #f7f4f1;
+}
+
+.items {
+  
+    padding: 0 24 / 32rem;
+}
+// 列表
+.items {
+    .title {
+        margin:  28 / 32rem 0 29 / 32rem;
+        // background-color: pink;
+        display: flex;
+        justify-content: space-between;
+        font-size: 28 / 32rem;
+  
+    h3 {
+        // 移动设备一般不使用字体加粗
+        font-size: 28 / 32rem;
+        font-weight: normal;
+        }
+    span {
+        color: #888;
+        }
+    }
+    .item {
+        background-color: #fff;
+        margin-bottom: 30 / 32rem;
+       
+        &:not(.add) {
+            border-radius: 10 / 32rem;
+            overflow: hidden;
+        }
+
+        .body {
+            height: 236 / 32rem;
+            background: url(../images/icon.png) repeat-x bottom;
+            background-size: 24 /32rem 8 / 32rem;
+            position: relative;
+        }
+        .body::after {
+            content: '';
+            display: block;
+            width: 146 / 32rem;
+            height: 146 / 32rem;
+            background-image: url(../images/sale.png);
+            background-size:  146 / 32rem;
+            position: absolute;
+            right:-6 / 32rem;
+            top: -18 /32rem; 
+        }
+        .extra {
+            height: 80 / 32rem;
+            display: flex;
+            padding: 16 / 32rem 0;
+            box-sizing: border-box;
+            
+            a {
+                flex:1;
+                text-align: center;
+                border-right: 1px solid #e8e2d9;
+                line-height: 48 / 32rem;
+                font-size: 36 / 32rem;
+
+                &:last-child {
+                 border-right: none;
+                }
+           
+            }
+            span {
+                color:#888;
+                font-size: 26 / 32rem;
+            }
+            
+        }
+    }
+     // 不想让下面的add 也被设置边框圆角，使用排除伪类
+    //  .item:not(.add) {
+    //     border-radius: 40 / 32rem;
+    //     overflow: hidden;
+    //  }
+    // 全场优惠
+    .all {
+        .body {
+            background-color: #55bc75;
+            color: #fff;
+            padding: 34  / 32rem 27 / 32rem;
+            box-sizing: border-box;
+            .condition{
+                h1 {
+                    font-size: 44 /32rem;
+                    font-weight: normal;
+                }
+                span {
+                    display: block;
+                    font-size: 24 /32rem;
+                    margin:32 / 32rem 0 30 /32rem 0;
+                    color: #b2edc6;
+                }
+               
+            }
+            .time {
+                font-size: 18 / 32rem;
+                line-height: 33 / 32rem;
+                .icon-time {
+                    font-size: 25 / 32rem;
+                }
+                .start {
+                    display: block;
+                    float:right;
+                    width:94 / 32rem;
+                    height: 33/ 32rem;
+                    background-color: #2a603b;
+                    line-height: 33 / 32rem;
+                    text-align: center;
+                    border-radius: 5 /32rem;
+                    color: #b2edc6;
+                   
+                }
+            }
+        }
+        .extra {
+            a {
+                color: #55bc75;
+            }
+        }
+    }
+    // 优惠券
+    .coupon {
+        .body {
+            background-color: #a974bc;
+            padding: 27  / 32rem 27 / 32rem;
+            color: #fff;
+            box-sizing: border-box;
+            // 使用条件
+                p {
+                    font-size: 24 / 32rem;
+                    color: #eac7f7;
+                    .yuan {
+                        font-size: 30 / 32rem;
+                        color:#fff; 
+    
+                    }
+                    .five {
+                        font-size: 70 / 32rem;
+                        color:#fff;
+                       
+                    }
+                }
+                  
+            // 使用时间
+            .time {
+                margin-top:32 / 32rem;
+                font-size: 22 / 32rem;
+                .num {
+                    color: #fff;
+                    margin-bottom: 5 /32rem;
+                }
+                .icon-time {
+                    font-size: 25 / 32rem;
+                }
+             
+                .state {
+                    display: block;
+                    float:right;
+                    width:94 / 32rem;
+                    height: 33/ 32rem;
+                    background-color: #6a4279;
+                    line-height: 33 / 32rem;
+                    text-align: center;
+                    border-radius: 5 /32rem;
+                    color: #d6badf;
+                    margin-top: -5 / 32rem;
+
+                }
+                .going {
+                    color: #dbb5e9;
+                    font-family: '宋体';
+                }
+            }
+
+        }
+        .special {
+            background-image: none;
+            margin-bottom: 30 / 32rem;
+        }
+        .extra {
+            a {
+                color: #a974bc;
+            }
+        }
+
+    }
+    // 添加按钮
+    .add {
+       height: 225 / 32rem;
+       border:  3 / 332rem dashed #ccc;
+
+       a {
+        font-size: 104 / 32rem;
+        color: #aeaeae;
+        display: block;
+        text-align: center;
+        padding-top:36 / 32rem;
+        
+       
+       }
+       span {
+           font-size: 26 / 32rem;
+           color: #aeaeae;
+           display: block;
+           margin-top: 14 / 32rem;     
+       }
+    }
+    
+
+}
+
+// 友情提示
+.tips {
+    padding: 0 24 / 32rem;
+
+    color: #999999;
+    font-size: 24 / 32rem;
+    line-height: 2;
+    margin-top: 116 / 32rem;
+}

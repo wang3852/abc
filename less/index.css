@@ -1,0 +1,269 @@
+@media (width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media (width: 414px) {
+  html {
+    font-size: 20.07px;
+  }
+}
+@media (width: 411px) {
+  html {
+    font-size: 20.05px;
+  }
+}
+@media (min-width: 640px) {
+  html {
+    font-size: 32px;
+  }
+}
+body,
+h1,
+h2,
+h3,
+dd,
+p,
+li {
+  padding: 0;
+  margin: 0;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+}
+.viewport {
+  width: 20rem;
+  margin: 0 auto;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?xgkav');
+  src: url('fonts/icomoon.eot?xgkav#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?xgkav') format('truetype'), url('fonts/icomoon.woff?xgkav') format('woff'), url('fonts/icomoon.svg?xgkav#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-add:before {
+  content: "\e900";
+}
+.icon-cancle:before {
+  content: "\e901";
+}
+.icon-delete:before {
+  content: "\e902";
+}
+.icon-edit:before {
+  content: "\e903";
+}
+.icon-preview:before {
+  content: "\e904";
+}
+.icon-share:before {
+  content: "\e905";
+}
+.icon-time:before {
+  content: "\e906";
+}
+body {
+  background-color: #f7f4f1;
+}
+.items {
+  padding: 0 0.75rem;
+}
+.items .title {
+  margin: 0.875rem 0 0.90625rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.items .title h3 {
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+.items .title span {
+  color: #888;
+}
+.items .item {
+  background-color: #fff;
+  margin-bottom: 0.9375rem;
+}
+.items .item:not(.add) {
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.items .item .body {
+  height: 7.375rem;
+  background: url(../images/icon.png) repeat-x bottom;
+  background-size: 0.75rem 0.25rem;
+  position: relative;
+}
+.items .item .body::after {
+  content: '';
+  display: block;
+  width: 4.5625rem;
+  height: 4.5625rem;
+  background-image: url(../images/sale.png);
+  background-size: 4.5625rem;
+  position: absolute;
+  right: -0.1875rem;
+  top: -0.5625rem;
+}
+.items .item .extra {
+  height: 2.5rem;
+  display: flex;
+  padding: 0.5rem 0;
+  box-sizing: border-box;
+}
+.items .item .extra a {
+  flex: 1;
+  text-align: center;
+  border-right: 1px solid #e8e2d9;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+.items .item .extra a:last-child {
+  border-right: none;
+}
+.items .item .extra span {
+  color: #888;
+  font-size: 0.8125rem;
+}
+.items .all .body {
+  background-color: #55bc75;
+  color: #fff;
+  padding: 1.0625rem 0.84375rem;
+  box-sizing: border-box;
+}
+.items .all .body .condition h1 {
+  font-size: 1.375rem;
+  font-weight: normal;
+}
+.items .all .body .condition span {
+  display: block;
+  font-size: 0.75rem;
+  margin: 1rem 0 0.9375rem 0;
+  color: #b2edc6;
+}
+.items .all .body .time {
+  font-size: 0.5625rem;
+  line-height: 1.03125rem;
+}
+.items .all .body .time .icon-time {
+  font-size: 0.78125rem;
+}
+.items .all .body .time .start {
+  display: block;
+  float: right;
+  width: 2.9375rem;
+  height: 1.03125rem;
+  background-color: #2a603b;
+  line-height: 1.03125rem;
+  text-align: center;
+  border-radius: 0.15625rem;
+  color: #b2edc6;
+}
+.items .all .extra a {
+  color: #55bc75;
+}
+.items .coupon .body {
+  background-color: #a974bc;
+  padding: 0.84375rem 0.84375rem;
+  color: #fff;
+  box-sizing: border-box;
+}
+.items .coupon .body p {
+  font-size: 0.75rem;
+  color: #eac7f7;
+}
+.items .coupon .body p .yuan {
+  font-size: 0.9375rem;
+  color: #fff;
+}
+.items .coupon .body p .five {
+  font-size: 2.1875rem;
+  color: #fff;
+}
+.items .coupon .body .time {
+  margin-top: 1rem;
+  font-size: 0.6875rem;
+}
+.items .coupon .body .time .num {
+  color: #fff;
+  margin-bottom: 0.15625rem;
+}
+.items .coupon .body .time .icon-time {
+  font-size: 0.78125rem;
+}
+.items .coupon .body .time .state {
+  display: block;
+  float: right;
+  width: 2.9375rem;
+  height: 1.03125rem;
+  background-color: #6a4279;
+  line-height: 1.03125rem;
+  text-align: center;
+  border-radius: 0.15625rem;
+  color: #d6badf;
+  margin-top: -0.15625rem;
+}
+.items .coupon .body .time .going {
+  color: #dbb5e9;
+  font-family: '宋体';
+}
+.items .coupon .special {
+  background-image: none;
+  margin-bottom: 0.9375rem;
+}
+.items .coupon .extra a {
+  color: #a974bc;
+}
+.items .add {
+  height: 7.03125rem;
+  border: 0.00903614rem dashed #ccc;
+}
+.items .add a {
+  font-size: 3.25rem;
+  color: #aeaeae;
+  display: block;
+  text-align: center;
+  padding-top: 1.125rem;
+}
+.items .add span {
+  font-size: 0.8125rem;
+  color: #aeaeae;
+  display: block;
+  margin-top: 0.4375rem;
+}
+.tips {
+  padding: 0 0.75rem;
+  color: #999999;
+  font-size: 0.75rem;
+  line-height: 2;
+  margin-top: 3.625rem;
+}

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>优惠活动</title>
+    <link rel="stylesheet" href="less/index.css">
+</head>
+
+<body>
+    <dl class="viewport">
+        <!-- 头部 -->
+        <div class="top">
+            <img src="images/top.png">
+        </div>
+        <!-- 列表 -->
+        <div class="items">
+            <!-- 标题 -->
+            <div class="title">
+                <h3>全场优惠</h3>
+                <span>0/1</span>
+            </div>
+            <!-- 选项 -->
+            <div class="item all">
+                <div class="body">
+                    <!-- 满足条件 -->
+                    <div class="condition">
+                        <h1>全场满300减10</h1>
+                        <span>双十一特价优惠全场满就减</span>
+                    </div>
+                    <!-- 时间 -->
+                    <div class="time">
+                        <span class="icon-time"></span>
+                       <span class="time-text">14-11-12 20:12 至 14-11-12 23:12</span>
+                       <span class="start">即将开始</span>
+                    </div>
+                </div>
+                <div class="extra">
+                    <a href="javascript:;" class="icon-edit">
+                        <span>编辑</span>
+                    </a>
+                    <a href="javascript:;" class="icon-share">
+                        <span>分享</span>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="item add">
+                <a href="javascript:;" class="icon-add">
+                    <span>添加优惠</span>
+                </a>
+            </div>
+
+            <!-- 标题 -->
+            <div class="title">
+                <h3>优惠券</h3>
+                <span>0/3</span>
+            </div>
+            <!-- 选项 -->
+            <div class="item coupon">
+                <div class="body special">
+                    <!-- 条件 -->
+                    <p class="yuan">￥<span class="five">5</span>(满0.00可用)</p>
+                    <!-- 时间 -->
+                    <div class="time">
+                        <p class="num">已领取/已使用：12/22   发行总数：1230</p>
+                        <span class="icon-time"></span>
+                        <span class="data">14-11-12 至 14-11-12</span>
+                        <span class="state">已领取完</span> 
+                    </div>
+                </div>
+                <div class="body">
+                        <!-- 条件 -->
+                        <p class="yuan">￥<span class="five">20</span>(满0.00可用)</p>
+                        <!-- 时间 -->
+                        <div class="time">
+                            <p class="num">已领取/已使用：12/22   发行总数：1230</p>
+                            <span class="icon-time"></span>
+                            <span class="data going">14-11-12 至 14-11-12</span>
+                            <span class="state">正在进行</span> 
+                        </div>
+                    </div>
+                <div class="extra">
+                    <a href="javascript:;" class="icon-delete">
+                        <span>作废</span>
+                    </a>
+                    <a href="javascript:;" class="icon-preview">
+                        <span>预览</span>
+                    </a>
+                    <a href="javascript:;" class="icon-share">
+                            <span>分享</span>
+                        </a>
+                </div>
+            </div>
+
+            <div class="item add">
+                <a href="javascript:;" class="icon-add">
+                    <span>添加优惠券</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- 友情提示 -->
+        <dl class="tips">
+            <dt>提示：</dt>
+            <dd> 1、买家下单时只可选择其一（全场优惠或优惠券）</dd>
+            <dd> 2、优惠券一旦设置后不可修改</dd>
+        </dl>
+    </div>
+    <script>
+        // 获取根元素
+    var dom = document.documentElement;
+    // 获取根元素的宽
+    var w = dom.clientWidth;//
+    // 设置html的字号（每20份）
+    dom.style.fontSize = w / 20 + 'px';
+ 
+  
+    </script>
+</body>
+
+</html>
